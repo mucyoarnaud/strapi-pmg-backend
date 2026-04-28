@@ -478,9 +478,14 @@ export interface ApiLawyerLawyer extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    AreasOfExpertise: Schema.Attribute.Text;
+    BarAdmissions: Schema.Attribute.Text;
+    Biography: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Education: Schema.Attribute.Text;
+    Languages: Schema.Attribute.Text;
     lawyer: Schema.Attribute.Relation<'oneToOne', 'api::lawyer.lawyer'>;
     lawyers_page: Schema.Attribute.Relation<
       'manyToOne',

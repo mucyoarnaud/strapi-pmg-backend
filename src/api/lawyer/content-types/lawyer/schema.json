@@ -30,6 +30,21 @@
       "relation": "manyToOne",
       "target": "api::lawyers-page.lawyers-page",
       "inversedBy": "lawyers"
+    },
+    "Biography": {
+      "type": "text"
+    },
+    "Education": {
+      "type": "text"
+    },
+    "AreasOfExpertise": {
+      "type": "text"
+    },
+    "BarAdmissions": {
+      "type": "text"
+    },
+    "Languages": {
+      "type": "text"
     }
   }
 }
